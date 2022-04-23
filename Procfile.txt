@@ -1,0 +1,1 @@
+web: gunicorn the_esc_outlet.wsgi:application
