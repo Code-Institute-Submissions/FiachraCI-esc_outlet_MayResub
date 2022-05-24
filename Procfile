@@ -1,1 +1,1 @@
-web: gunicorn the_esc_outlet.wsgi:application
+web: gunicorn esc_outlet.wsgi:application

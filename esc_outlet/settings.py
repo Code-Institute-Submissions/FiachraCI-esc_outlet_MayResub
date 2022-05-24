@@ -99,6 +99,7 @@ LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'esc_outlet.wsgi.application'
 
+ALLOWED_HOSTS = ['the-esc-outlet.herokuapp.com']
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
@@ -111,9 +112,10 @@ WSGI_APPLICATION = 'esc_outlet.wsgi.application'
 # }
 
 DATABASES = {
-    'default': dj_database_url.parse('postgres://obkcnpxszjpcch:aa32d47c1d7aa3a0e156c4987f756d1c7113ddc73c8227b93ca76949f6a385ec@ec2-3-223-213-207.compute-1.amazonaws.com:5432/daukfm54bme51k')
+    'default': dj_database_url.parse('postgres://hfnumuxhextasz:50e161de51b3214aefe39901255cff81b5b818ab5869b67814574e880024f990@ec2-44-194-117-205.compute-1.amazonaws.com:5432/d3ngcimjfvvudr')
 }
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
